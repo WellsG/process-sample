@@ -1,0 +1,46 @@
+package com.redhat.errata.errata_user_settings;
+
+import org.kie.api.runtime.process.WorkflowProcessInstance;
+
+rule "Evaluate Default Errata Roles"
+
+	ruleflow-group "errata_role_access"
+	no-loop true
+	when
+		$processInstance : WorkflowProcessInstance(processId == "errata-user-settings.Errata-User-Settings")
+		$userJobTitle : String() from (String)$processInstance.getVariable("userJobTitle")
+                $userldapGroups: String() from (String)$processInstance.getVariable("ldapGroupsName")
+	then
+                String defaultRoles = "";
+		System.out.println("userJobTitle >>>>>>>>>>>>>>>>>>>>" + $userJobTitle);
+		System.out.println("userldapGroups >>>>>>>>>>>>>>>>>>>>" + $userldapGroups);
+		if ($userJobTitle.contains("Software Engineer")) {
+			defaultRoles = "devel";
+		}
+                if ($userJobTitle.contains("Technical Writer")) {
+			defaultRoles = "docs";
+		}
+		if ($userJobTitle.contains("Technical Support Engineer") ||
+			$userJobTitle.contains("Consultant")  || 
+			$userJobTitle.contains("Customer Support")  || 
+			$userJobTitle.contains("Software Maintenance Engineer")  || 
+			$userJobTitle.contains("Applications Engineer") ||
+                        $userldapGroups.contains("gss")
+			) {
+			defaultRoles = "readonly";
+		}
+		if ($userJobTitle.contains("Quality Engineer")) {
+			defaultRoles = "qa";
+		}
+		if ($userJobTitle.contains("Program Manager") ||
+			$userJobTitle.contains("Product Manager") ) {
+			defaultRoles = "pm";
+		}
+		if ($userldapGroups.contains("eng-rcm")) {
+			defaultRoles = "releng";
+		}
+                modify($processInstance){
+ 		  	setVariable("userDefaultRole", defaultRoles)
+ 		}
+
+end

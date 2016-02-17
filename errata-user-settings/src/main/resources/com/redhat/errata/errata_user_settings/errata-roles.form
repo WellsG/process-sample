@@ -1,0 +1,175 @@
+
+<form id="455766602">
+<property name="name" value="errata-roles.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name=":decorator_1" type="Separator" id="2000921200">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="fieldClass" value="Separator"/>
+</field>
+<field position="1" name="admin" type="CheckBox" id="494550632">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Adminquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="2" name="readonly" type="CheckBox" id="6103169">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Readonly(Global Support)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="3" name="createasync" type="CheckBox" id="1573996734">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Createasyncquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="4" name="devel" type="CheckBox" id="1374825952">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Devel (Engineering)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="5" name="docs" type="CheckBox" id="255230543">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Docs (Content Services)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="6" name="management" type="CheckBox" id="37149585">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Managementquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="7" name="pm" type="CheckBox" id="2007301757">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;PMquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="8" name="pusherrata" type="CheckBox" id="416371345">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;PushErrataquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="9" name="qa" type="CheckBox" id="6543099">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;QA ( Quality Engineering )quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="10" name="releng" type="CheckBox" id="905741271">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;RelEng ( Rel Eng )quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="11" name="secalert" type="CheckBox" id="147778717">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;SecAlertquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="12" name="signer" type="CheckBox" id="1464154916">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="true"/>
+<property name="labelCSSStyle" value="text-indent:-245px;float:left"/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;text-indent:-245px;float:leftquot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Signerquot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="float:left"/>
+<property name="fieldClass" value="java.lang.Boolean"/>
+</field>
+<field position="13" name="justification" type="InputTextArea" id="1826353820">
+<property name="fieldRequired" value="true"/>
+<property name="labelCSSStyle" value="font-weight:bold"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;Justification:quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="size" value="70"/>
+<property name="inputBinding" value="justification"/>
+<property name="outputBinding" value="justification"/>
+<property name="fieldClass" value="java.lang.String"/>
+<property name="onChangeScript" value="var rolesArray = new Array(); $(&apos;input:checkbox&apos;).each(function(){      if(this.checked){rolesArray.push(this.id)}; $(&apos;#sub1-roles&apos;).val(rolesArray.join(&apos;,&apos;));})"/>
+</field>
+<field position="14" name=":decorator_0" type="HTMLLabel" id="851593766">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="readonly" value="false"/>
+<property name="htmlContent" value="quot;caquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;dequot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;enquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;esquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;frquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;jaquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;ptquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;quot;zhquot;,quot;&lt;p&gt;&lt;strong&gt;&lt;em&gt;(Note: Please explain why you need the above roles in detail, or failed to get approval.&amp;nbsp; You are recommended to request the matched roles. )&lt;/em&gt;&lt;/strong&gt;&lt;/p&gt; quot;"/>
+<property name="fieldClass" value="HTMLlabel"/>
+</field>
+<field position="15" name="roles" type="InputText" id="953153526">
+<property name="fieldRequired" value="false"/>
+<property name="groupWithPrevious" value="false"/>
+<property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="cssStyle" value="display:none"/>
+<property name="isHTML" value="false"/>
+<property name="hideContent" value="false"/>
+<property name="inputBinding" value="roles"/>
+<property name="outputBinding" value="roles"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="test" name="#0000A0" type="basicType" outId="test" value="java.lang.String" id="test"/>
+</form>

@@ -1,0 +1,618 @@
+import org.drools.core.process.core.datatype.impl.type.StringDataType;
+import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
+import org.drools.core.process.core.datatype.impl.type.IntegerDataType;
+import org.drools.core.process.core.datatype.impl.type.BooleanDataType;
+
+[
+  [
+    "name" : "Email",
+    "parameters" : [
+      "From" : new StringDataType(),
+      "To" : new StringDataType(),
+      "Subject" : new StringDataType(),
+      "Body" : new StringDataType()
+    ],
+    "displayName" : "Email",
+    "icon" : "defaultemailicon.gif"
+  ],
+
+  [
+    "name" : "Log",
+    "parameters" : [
+      "Message" : new StringDataType()
+    ],
+    "displayName" : "Log",
+    "icon" : "defaultlogicon.gif"
+  ],
+
+  [
+    "name" : "WebService",
+    "parameters" : [
+        "Url" : new StringDataType(),
+         "Namespace" : new StringDataType(),
+         "Interface" : new StringDataType(),
+         "Operation" : new StringDataType(),
+         "Parameter" : new StringDataType(),
+         "Endpoint" : new StringDataType(),
+         "Mode" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "WS",
+    "icon" : "defaultservicenodeicon.png"
+  ],
+
+  [
+    "name" : "Rest",
+    "parameters" : [
+        "Url" : new StringDataType(),
+        "Method" : new StringDataType(),
+        "ConnectTimeout" : new StringDataType(),
+        "ReadTimeout" : new StringDataType(),
+        "Username" : new StringDataType(),
+        "Password" : new StringDataType()
+    ],
+    "results" : [
+        "Result" : new ObjectDataType(),
+    ],
+    "displayName" : "REST",
+    "icon" : "defaultservicenodeicon.png"
+
+  ],
+
+    [
+        "name" : "ACL",
+        "displayName" : "ACL",
+        "version" : "1.0",
+        "category" : "Red Hat ACL",
+        "parameters" : [
+            "Actors" : new StringDataType(),
+            "Groups" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "brew.task",
+        "displayName" : "Generic Brew Service",
+        "version" : "1.0",
+        "category" : "Red Hat Brew",
+        "parameters" : [
+            "Service" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "brew.seach_packages",
+        "displayName" : "Search Packages",
+        "version" : "1.0",
+        "category" : "Red Hat Brew",
+        "parameters" : [
+            "i_tagID" : new StringDataType(),
+            "i_srpmName" : new StringDataType()
+        ],
+        "results" : [
+            "i_brewResult" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "brew.get_build",
+        "displayName" : "Get Build",
+        "version" : "1.0",
+        "category" : "Red Hat Brew",
+        "parameters" : [
+            "nvr" : new StringDataType()
+        ],
+        "results": [
+            "buildId" : new StringDataType(),
+            "description" : new StringDataType(),
+            "packageName" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [ 
+       "name" : "bugzilla.get_user",
+       "displayName" : "Get User",
+       "version" : "1.0",
+       "category" : "Red Hat Bugzilla",     
+       "parameters" : [ 
+           "loginName" : new StringDataType()
+       ], 
+       "results" : [ 
+           "User" : new ObjectDataType()
+       ], 
+       "icon" : "defaultservicenodeicon.png" 
+    ],
+    [
+        "name" : "bugzilla.task",
+        "displayName" : "Generic Bugzilla Service",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Service" : new StringDataType()
+        ],
+        "results": [
+            "Result" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.get_bug",
+        "displayName" : "Get Bug",
+        "parameters" : [
+            "Id" : new StringDataType()
+        ],
+        "results" : [
+            "Result" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.create_bug",
+        "displayName" : "Create Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Product" : new StringDataType(),
+            "Components" : new StringDataType(),
+            "Summary" : new StringDataType(),
+            "Versions" : new StringDataType(),
+            "Description" : new StringDataType(),
+            "OperatingSystem" : new StringDataType(),
+            "Platform" : new StringDataType(),
+            "BugPriority" : new StringDataType(),
+            "Severity" : new StringDataType(),
+            "Alias" : new StringDataType(),
+            "AssignedTo" : new StringDataType(),
+            "Cc" : new StringDataType(),
+            "CommentIsPrivate" : new StringDataType(),
+            "Groups" : new StringDataType(),
+            "QAContact" : new StringDataType(),
+            "Status" : new StringDataType(),
+            "Resolution" : new StringDataType(),
+            "TargetMilestone" : new StringDataType(),
+            "TargetRelease" : new StringDataType(),
+            "Keywords" : new StringDataType(),
+            "Whiteboard" : new StringDataType(),
+            "InternalWhiteboard" : new StringDataType(),
+            "DevelWhiteboard" : new StringDataType(),
+            "OnBehalfOf" : new StringDataType(),
+        ],
+        "results": [
+            "bugId" : new IntegerDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.update_bug",
+        "displayName" : "Update Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new StringDataType(),
+            "Product" : new StringDataType(),
+            "Components" : new StringDataType(),
+            "Summary" : new StringDataType(),
+            "Versions" : new StringDataType(),
+            "OperatingSystem" : new StringDataType(),
+            "Platform" : new StringDataType(),
+            "BugPriority" : new StringDataType(),
+            "Severity" : new StringDataType(),
+            "AssignedTo" : new StringDataType(),
+            "QAContact" : new StringDataType(),
+            "Status" : new StringDataType(),
+            "Resolution" : new StringDataType(),
+            "TargetMilestone" : new StringDataType(),
+            "TargetRelease" : new StringDataType(),
+            "Keywords" : new StringDataType(),
+            "Whiteboard" : new StringDataType(),
+            "InternalWhiteboard" : new StringDataType(),
+            "DevelWhiteboard" : new StringDataType(),
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.update_flag",
+        "displayName" : "Set Flag on Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new StringDataType(),
+            "Name" : new StringDataType(),
+            "Status" : new StringDataType(),
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_comment",
+        "displayName" : "Add Comment to Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new StringDataType(),
+            "Text" : new StringDataType(),
+            "IsPrivate" : new StringDataType(),
+            "OnBehalfOf" : new StringDataType(),
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.get_comment",
+        "displayName" : "Get Comment from Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "BugId" : new StringDataType(),
+            "Index" : new StringDataType(),
+        ],
+        "results" : [
+            "Id" : new IntegerDataType(),
+            "Text" : new StringDataType(),
+            "IsPrivate" : new BooleanDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_bug_dependency",
+        "displayName" : "Add Dependency on Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new StringDataType(),
+            "DependsOn" : new StringDataType(),
+            "Blocks" : new StringDataType(),
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_bug_cc",
+        "displayName" : "Add CC to Bug",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new StringDataType(),
+            "Cc" : new StringDataType(),
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_bug_keywords",
+        "displayName" : "Add Keywords",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new IntegerDataType(),
+            "Keywords" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_bug_internalwhiteboard",
+        "displayName" : "Add Internal Whiteboard",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Id" : new IntegerDataType(),
+            "InternalWhiteboard" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.add_user_groups",
+        "displayName" : "Add User to Groups",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "BZUser" : new StringDataType(),
+            "Groups" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.offer_account_by_email",
+        "displayName" : "Offer Account By Email",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "email" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.get_group_desc",
+        "displayName" : "Get Group Description",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "defaultBzGroupsForUser" : new StringDataType()
+        ],
+        "results": [
+            "defaultBzGroupsDesc" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.create_component",
+        "displayName" : "Create Component",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "DefaultAssignee" : new StringDataType(),
+            "DefaultDocsContact" : new StringDataType(),
+            "DefaultCC" : new StringDataType(),
+            "Product" : new StringDataType(),
+            "Description" : new StringDataType(),
+            "Name" : new StringDataType(),
+            "DefaultQAContact" : new StringDataType(),
+            "Template" : new StringDataType()
+        ],
+        "results": [
+            "componentId" : new IntegerDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+      ],
+      [
+        "name" : "bugzilla.create_sub_component",
+        "displayName" : "Create Sub Component",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Product" : new StringDataType(),
+            "ComponentName" : new StringDataType(),
+            "SubCompName" : new StringDataType(),
+            "ParentName" : new StringDataType(),
+            "Description" : new StringDataType(),
+            "DefaultAssignee" : new StringDataType(),
+            "DefaultQAContact" : new StringDataType(),
+            "DefaultDocsContact" : new StringDataType(),
+            "DefaultCC" : new StringDataType()
+         ],
+        "results": [
+            "subCompId" : new IntegerDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "bugzilla.update_sub_component",
+        "displayName" : "Update Sub Component",
+        "version" : "1.0",
+        "category" : "Red Hat Bugzilla",
+        "parameters" : [
+            "Product" : new StringDataType(),
+            "ComponentName" : new StringDataType(),
+            "SubCompName" : new StringDataType(),
+            "Description" : new StringDataType(),
+            "DefaultAssignee" : new StringDataType(),
+            "DefaultQAContact" : new StringDataType(),
+            "DefaultDocsContact" : new StringDataType(),
+            "DefaultCC" : new StringDataType()
+         ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "rt.create_ticket",
+        "displayName" : "Create Ticket",
+        "version" : "1.0",
+        "category" : "Red Hat Request Tracker",
+        "parameters" : [
+            "queue" : new StringDataType(),
+            "owner" : new StringDataType(),
+            "nobody" : new StringDataType(),
+            "subject" : new StringDataType(),
+            "status" : new StringDataType(),
+            "requestors" : new StringDataType(),
+            "cc" : new StringDataType(),
+            "adminCc" : new StringDataType(),
+            "priority" : new IntegerDataType(),
+            "initialPriority" : new IntegerDataType(),
+            "finalPriority" : new IntegerDataType(),
+            "created" : new StringDataType(),
+            "starts" : new StringDataType(),
+            "started" : new StringDataType(),
+            "lastUpdated" : new StringDataType(),
+            "due" : new StringDataType(),
+            "resolved" : new StringDataType(),
+            "told" : new StringDataType(),
+            "timeEstimated" : new StringDataType(),
+            "timeWorked" : new StringDataType(),
+            "timeLeft" : new StringDataType(),
+            "text" : new StringDataType()
+        ],
+        "results" : [
+            "ticketId" : new IntegerDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "rt.edit_ticket",
+        "displayName" : "Edit Ticket",
+        "version" : "1.0",
+        "category" : "Red Hat Request Tracker",
+        "parameters" : [
+            "ticketId" : new IntegerDataType(),
+            "queue" : new StringDataType(),
+            "owner" : new StringDataType(),
+            "nobody" : new StringDataType(),
+            "creator" : new StringDataType(),
+            "subject" : new StringDataType(),
+            "status" : new StringDataType(),
+            "requestors" : new StringDataType(),
+            "cc" : new StringDataType(),
+            "adminCc" : new StringDataType(),
+            "priority" : new IntegerDataType(),
+            "initialPriority" : new IntegerDataType(),
+            "finalPriority" : new IntegerDataType(),
+            "created" : new StringDataType(),
+            "starts" : new StringDataType(),
+            "started" : new StringDataType(),
+            "lastUpdated" : new StringDataType(),
+            "due" : new StringDataType(),
+            "resolved" : new StringDataType(),
+            "told" : new StringDataType(),
+            "timeEstimated" : new StringDataType(),
+            "timeWorked" : new StringDataType(),
+            "timeLeft" : new StringDataType(),
+            "text" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "rt.get_ticket",
+        "displayName" : "Get Ticket",
+        "version" : "1.0",
+        "category" : "Red Hat Request Tracker",
+        "parameters" : [
+            "ticketId" : new IntegerDataType()
+        ],
+        "results" : [
+            "ticket" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "orgchart.get_user",
+        "displayName" : "Get OrgChart User",
+        "version" : "1.0",
+        "category" : "Red Hat People",
+        "parameters" : [
+            "orgUser" : new StringDataType()
+        ],"results" : [
+            "username" : new StringDataType(),
+            "realName" : new StringDataType(),
+            "emailAddresses" : new StringDataType(),
+            "managerUsername" : new StringDataType(),
+            "functionalManagerUsername" : new StringDataType(),
+            "department" : new StringDataType(),
+            "title" : new StringDataType(),
+            "costCenter" : new StringDataType(),
+            "employeeNumber" : new StringDataType(),
+            "oracleId" : new IntegerDataType(),
+            "employeeType" : new StringDataType(),
+            "group" : new ObjectDataType(),
+            "groupName" : new StringDataType(),
+            "title" : new StringDataType(),
+            "location" : new StringDataType(),
+            "hireDate" : new StringDataType(),
+            "termDate" : new StringDataType(),
+            "products" : new ObjectDataType(),
+            "disabled" : new BooleanDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "orgchart.get_groups_for_user",
+        "displayName" : "Get Groups for User",
+        "version" : "1.0",
+        "category" : "Red Hat People",
+        "parameters" : [
+            "orgUser" : new StringDataType()
+        ],
+        "results" : [
+            "orgGroupsForUser" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+        "name" : "mailman.request_mail_list",
+        "displayName" : "Request Mail List",
+        "version" : "1.0",
+        "category" : "Red Hat Mailman",
+        "parameters" : [
+            "serverUrl" : new StringDataType(),
+            "fullName" : new StringDataType(),
+            "kerberos" : new StringDataType(),
+            "mailList" : new StringDataType()
+         ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+    [
+    "name" : "Appointment",
+    "parameters" : [
+      "From" : new StringDataType(),
+      "To" : new StringDataType(),
+      "Subject" : new StringDataType(),
+      "Body" : new StringDataType(),
+      "location" : new StringDataType(),
+      "startDate" : new StringDataType(),
+      "endDate" : new StringDataType()
+    ],
+    "displayName" : "Appointment",
+    "icon" : "defaultemailicon.gif"
+  ],
+[
+        "name" : "errata.user_role_setting",
+        "displayName" : "Errata User's Role Setting",
+        "version" : "1.0",
+        "category" : "Red Hat ERRATA",
+        "parameters" : [
+            "loginName" : new StringDataType(),
+            "realName" : new StringDataType(),
+            "organization" : new ObjectDataType(),
+            "roles" : new StringDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+[
+	    "name" : "ldap.user.get", 
+	    "category" : "Red Hat LDAP",
+	    "version" : "1.0",
+	    "parameters" : [ 
+	        "userName" : new StringDataType()
+	    ], 
+	    "results" : [ 
+	        "userId" : new StringDataType(),
+            "userRealName" : new StringDataType(),
+            "userManagerId" : new StringDataType(),
+            "userDepartment" : new StringDataType(),
+            "userMail" : new StringDataType(),
+            "userJobTitle" : new StringDataType(),
+            "userLocation" : new StringDataType(),
+            "userHiredate" : new StringDataType(),
+            "userCostCenter" : new StringDataType()
+	    ], 
+	    "displayName" : "Get User Info In LDAP", 
+	    "icon" : "defaultservicenodeicon.png" 
+	],
+[
+        "name" : "rt.correspond",
+        "displayName" : "Correspond",
+        "version" : "1.0",
+        "category" : "Red Hat Request Tracker",
+        "parameters" : [
+            "ticketId" : new IntegerDataType(),
+            "comment" : new StringDataType(),
+            "cc" : new StringDataType(),
+            "bcc" : new StringDataType()
+        ],
+        "results" : [
+            "result" : new ObjectDataType()
+        ],
+        "icon" : "defaultservicenodeicon.png"
+    ],
+       [
+	    "name" : "ldap.user.get_groups", 
+	    "category" : "Red Hat LDAP",
+	    "version" : "1.0",
+	    "parameters" : [
+	        "user" : new StringDataType()
+	    ],
+	    "results" : [
+	        "groups" : new ObjectDataType() 
+	    ], 
+	    "displayName" : "Get User's Groups In LDAP", 
+	    "icon" : "defaultservicenodeicon.png" 
+	],
+      [
+	"name" : "async",
+	"parameters" : [
+		"CommandClass" : new StringDataType(),
+	 ],
+	 "results" : [
+	        "Result" : new ObjectDataType(),
+	  ],
+	 "displayName" : "async",
+	 "icon" : "defaultservicenodeicon.png"
+     ]
+
+]
